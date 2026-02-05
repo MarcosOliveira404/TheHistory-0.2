@@ -1,0 +1,2 @@
+# TheHistory-0.2
+📚 Biblioteca Histórica é um site interativo que reúne livros e conteúdos sobre história, filosofia e culturas antigas. Explore obras detalhadas com imagens, capítulos organizados, pesquisa por títulos e conceitos destacados com explicações em pop-up. Uma experiência educativa para estudantes, curiosos e apaixonados por história, disponível online para leitura prática e acessível.
