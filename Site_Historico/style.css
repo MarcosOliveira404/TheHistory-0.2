@@ -1,0 +1,278 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  background: #e6dcc9; /* fundo externo estilo pergaminho */
+  margin: 0;
+  padding: 0;
+  color: #2b2b2b;
+}
+
+/* HEADER */
+header {
+  background: #000424;
+  color: white;
+  padding: 18px 12px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+header input {
+  margin-top: 10px;
+  padding: 10px 14px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+}
+
+/* BIBLIOTECA */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 18px;
+  padding: 18px;
+}
+
+.livro {
+  background: #fff8e6;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.livro:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+.livro h3 {
+  font-size: 0.95rem;
+  margin: 8px 0 0;
+}
+
+.livro img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* LINK VOLTAR */
+.voltar {
+  display: inline-block;
+  margin: 16px;
+  text-decoration: none;
+  color: #3b2f2f;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+/* PÁGINA DO LIVRO */
+#conteudoLivro {
+  max-width: 860px;
+  margin: 24px auto;
+  padding: 28px 24px;
+  background: #fff3cf; /* amarelo antigo confortável */
+  border-radius: 14px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+/* TÍTULOS */
+#conteudoLivro h1 {
+  font-size: 2rem;
+  margin-top: 0;
+  text-align: center;
+}
+
+#conteudoLivro h2 {
+  font-size: 1.4rem;
+  margin-top: 32px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  padding-bottom: 6px;
+}
+
+#conteudoLivro h3 {
+  font-size: 1.2rem;
+  margin-top: 22px;
+}
+
+/* PARÁGRAFOS */
+#conteudoLivro p {
+  margin: 14px 0;
+  text-align: justify;
+}
+
+/* IMAGENS */
+.img-texto {
+  max-width: 100%;
+  display: block;
+  margin: 24px auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+}
+
+.img-direita {
+  float: right;
+  width: 260px;
+  margin: 10px 0 14px 20px;
+  border-radius: 10px;
+}
+
+.img-esquerda {
+  float: left;
+  width: 260px;
+  margin: 10px 20px 14px 0;
+  border-radius: 10px;
+}
+
+.img-full {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 34px 0;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+/* TERMO CLICÁVEL */
+.termo {
+  color: #5b3b1e;
+  font-weight: bold;
+  cursor: pointer;
+  border-bottom: 1px dotted #5b3b1e;
+  transition: color 0.2s;
+}
+
+.termo:hover {
+  color: #2f1b0a;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.65);
+  z-index: 9999;
+  animation: fadeIn 0.2s ease;
+}
+
+.modal-box {
+  background: #fff3cf;
+  max-width: 560px;
+  margin: 12% auto;
+  padding: 28px 26px;
+  border-radius: 16px;
+  box-shadow: 0 14px 32px rgba(0,0,0,0.3);
+  position: relative;
+  font-family: "Georgia", serif;
+  animation: scaleIn 0.2s ease;
+}
+
+.modal-box h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  border-bottom: 2px solid rgba(0,0,0,0.15);
+  padding-bottom: 6px;
+}
+
+.modal-box p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+#fecharModal {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 22px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+#fecharModal:hover {
+  transform: scale(1.2);
+}
+
+/* ANIMAÇÕES */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.92); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* LIMPA FLOAT */
+.clear {
+  clear: both;
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .livro img {
+    height: 180px;
+  }
+
+  #conteudoLivro {
+    margin: 16px 10px;
+    padding: 20px 16px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  #conteudoLivro p {
+    font-size: 1.05rem;
+  }
+
+  #conteudoLivro h1 {
+    font-size: 1.6rem;
+  }
+
+  #conteudoLivro h2 {
+    font-size: 1.25rem;
+  }
+
+  #conteudoLivro h3 {
+    font-size: 1.1rem;
+  }
+
+  .img-direita,
+  .img-esquerda {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 18px auto;
+  }
+}
