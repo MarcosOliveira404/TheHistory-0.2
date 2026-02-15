@@ -229,6 +229,84 @@ header input {
   clear: both;
 }
 
+
+
+/* ============================
+   📜 ESTILO DE TABELAS
+============================ */
+
+#conteudoLivro table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 28px 0;
+  background: #fff8dc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+  font-size: 0.95rem;
+}
+
+/* Cabeçalho */
+#conteudoLivro thead {
+  background: linear-gradient(135deg, #3b2f2f, #5b3b1e);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#conteudoLivro th {
+  padding: 12px 10px;
+  text-align: center;
+  font-weight: bold;
+  border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+#conteudoLivro th:last-child {
+  border-right: none;
+}
+
+/* Corpo */
+#conteudoLivro td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+#conteudoLivro tbody tr:nth-child(even) {
+  background: rgba(0,0,0,0.03);
+}
+
+#conteudoLivro tbody tr:hover {
+  background: rgba(91,59,30,0.12);
+  transition: background 0.2s;
+}
+
+/* Primeira coluna (símbolos) */
+#conteudoLivro td:first-child {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #3b2f2f;
+}
+
+/* Última coluna (descrições) */
+#conteudoLivro td:last-child {
+  text-align: left;
+  font-style: italic;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 600px) {
+  #conteudoLivro table {
+    font-size: 0.9rem;
+  }
+
+  #conteudoLivro th,
+  #conteudoLivro td {
+    padding: 8px;
+  }
+}
+
+
 /* 📱 RESPONSIVO */
 @media (max-width: 768px) {
   header h1 {
