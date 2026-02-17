@@ -1,10 +1,10 @@
 
 livros.push({
-   id: 2,
+   id: 4,
     titulo: "Vikings: Origem e Contos",
-    capa: "capas/Vikings.jpg",
+    capa: "capas/Vikings/Vikings.jpg",
     conteudo: `
-      <img src="capas/Vikings.jpg" alt="Templo budista" class="img-esquerda">
+      <img src="capas/Vikings/Vikings.jpg" alt="Templo budista" class="img-esquerda">
     
       <h1>Capítulo 1 — Os Vikings</h1>
 

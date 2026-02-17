@@ -1,10 +1,10 @@
 
 livros.push({
-   id: 4,
+   id: 3,
     titulo: "Cultura Grega",
-    capa: "capas/Grecia.jpg",
+    capa: "capas/Grecia/Grecia.jpg",
     conteudo: `
-      <img src="capas/Grecia.jpg" alt="Templo budista" class="img-esquerda">
+      <img src="capas/Grecia/Grecia.jpg" alt="Templo budista" class="img-esquerda">
     
       <h1>🇬🇷 Cultura Grega — Estudo Completo</h1>
 

@@ -1,10 +1,10 @@
 
 livros.push({
-   id: 3,
+   id: 2,
     titulo: "Civilização Mesopotânica",
-    capa: "capas/Mesopotamica.jpg",
+    capa: "capas/Mesopotamica/Mesopotamica.jpg",
     conteudo: `
-      <img src="capas/Mesopotamica.jpg" alt="Templo budista" class="img-esquerda">
+      <img src="capas/Mesopotamica/Mesopotamica.jpg" alt="Templo budista" class="img-esquerda">
     
       <h1>🌍 CIVILIZAÇÃO MESOPOTÂMICA</h1>
 

@@ -2,9 +2,9 @@
 livros.push({
    id: 1,
     titulo: "Budismo: Origem e Filosofia",
-    capa: "capas/Budismo.jpg",
+    capa: "capas/Budismo/Budismo.jpg",
     conteudo: `
-      <img src="capas/Budismo.jpg" alt="Templo budista" class="img-esquerda">
+      <img src="capas/Budismo/Budismo.jpg" alt="Templo budista" class="img-esquerda">
       <h1>Índia do Século VI a.C. e o Surgimento do Budismo</h1>
 
     <h2>Capítulo 1 — A Índia Antiga e seu Mundo</h2>

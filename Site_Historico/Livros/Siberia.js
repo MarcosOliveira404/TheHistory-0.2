@@ -1,10 +1,10 @@
 
 livros.push({
-   id: 6,
+   id: 5,
     titulo: "Sibéria: Origem e o Xamanismo",
-    capa: "capas/Siberia.jpg",
+    capa: "capas//Siberia/Siberia.jpg",
     conteudo: `
-      <img src="capas/Siberia.jpg" alt="Templo budista" class="img-esquerda">
+      <img src="capas//Siberia/Siberia.jpg" alt="Templo budista" class="img-esquerda">
     
 
       
